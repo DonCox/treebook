@@ -23,6 +23,12 @@
     <!--  Renders the page view into the layout view -->
     <%= yield %>
   </div>
+  
+  
+  <!-- Ensure you have flash messages in app/views/layouts/application.html.erb.
+       For example: -->
 
+  <p class="notice"><%= notice %></p>                                    
+  <p class="alert"><%= alert %></p>
 </body>
 </html>

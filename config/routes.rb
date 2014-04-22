@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   resources :statuses
 
+  # Ensure you have defined root_url to *something* in your config/routes.rb.
+  # For example:                                                             
+  root to: "statuses#index"
+  devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
