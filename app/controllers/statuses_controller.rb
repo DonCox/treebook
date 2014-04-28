@@ -1,5 +1,6 @@
 class StatusesController < ApplicationController
   before_action :set_status, only: [:show, :edit, :update, :destroy]
+  before_filer :authenicate_user!, only: [:new]
 
   # GET /statuses
   # GET /statuses.json
