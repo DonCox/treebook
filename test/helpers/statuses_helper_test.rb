@@ -8,7 +8,21 @@ class StatusesHelperTest < ActionView::TestCase
   test "that a status requires content" do
     status = Status.new
     assert !status.save
-    asser :status.errors[:content].empty?
+    assert !status.errors[:content].empty?
+  end
+  
+  test "status content at least two letters long" do
+    status = Status.new
+    status.content = "H"
+    assert !status.save
+    assert !status.errors[:conent].empty?
+  end
+  
+  test "that a status has a user id" do
+    status = Status.new
+    status.content = "Hello"
+    assert !status.save
+    assert !status.errors[:content].empty?
   end
   
 end
