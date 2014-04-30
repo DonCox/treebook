@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'profiles/show'
+
   resources :statuses
 
   # Ensure you have defined root_url to *something* in your config/routes.rb.
