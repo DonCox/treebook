@@ -6,3 +6,10 @@ jason:
     password: "password"
     password_confirmation: "password"
 
+don:
+    first_name: "Don"
+    last_name: "Cox"
+    email: "tvillcox@bellsouth.net"
+    profile_name: "DonCox"
+    password: "password"
+    password_confirmation: "password"
